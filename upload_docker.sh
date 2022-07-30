@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath="tolu1292/udacity-microsvc"
 
 # Step 2:  
 # Authenticate & tag
+docker tag microsvc:v1 $dockerpath
 echo "Docker ID and Image: $dockerpath"
+docker login
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
