@@ -42,7 +42,7 @@ source .devops/bin/activate
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+* Setup and Configure Docker locally by installing docker desktop and minikube following the steps here : https://minikube.sigs.k8s.io/docs/start/
+* Setup and Configure Kubernetes locally following the steps here: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+* Create Flask app in Container: `bash run_docker.sh`
+* Run via kubectl: `bash run_kubernetes.sh`
